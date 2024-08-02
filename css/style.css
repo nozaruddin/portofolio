@@ -1,0 +1,486 @@
+* {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  /* background-image: url(../img/bg.gif); */
+  background-position: center;
+  background-size: cover;
+  height: 2500px;
+  font-family: "poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 9999;
+  /* From https://css.glass */
+  background: #03346e;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+.navbar .navbarlogo {
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffffff;
+}
+.navbar .navbarlogo span {
+  color: #6eacda;
+}
+
+.navbar .navbarnav {
+  margin-right: 50px;
+  margin-top: 23px;
+}
+.navbarnav a {
+  margin-right: 1vw;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* @import url("https://fonts.googleapis.com/css?family=Cairo"); */
+
+.home .content {
+  display: flex;
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  align-items: center; /* Memusatkan secara horizontal */
+  justify-content: center; /* Memusatkan secara vertikal */
+  min-height: 100vh; /* Membuat kontainer setinggi viewport */
+  text-align: center;
+}
+.home .content #gambar {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+.home h1 {
+  display: inline-block;
+
+  line-height: normal;
+  color: #36a092;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+
+.home span {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-style: italic;
+}
+.home .title {
+  font-family: "Cairo";
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.home h2 {
+  background-image: url(https://media.giphy.com/media/kc0btUgdrXCKeQHTpP/giphy.gif?cid=790b7611xfkqdzzlako14nn45xlcjwbcnnc52vcpm3h7qppx&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 6rem;
+}
+
+.about {
+  padding-top: 28rem;
+}
+
+.about .row {
+  margin-top: -18rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.about h1 {
+  color: #6eacda;
+  font-size: 2rem;
+}
+.about h2 {
+  color: #ffffff;
+  font-weight: 100;
+  max-width: 60rem;
+  margin: auto;
+}
+.datadiri h3 {
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  padding: 3px 15px;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.projects h1 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.projects {
+  padding-top: 10rem;
+  text-align: center;
+}
+.projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Pusatkan elemen dalam row */
+  gap: 1.5rem; /* Jarak antar kartu */
+  margin: 0 auto; /* Pusatkan row secara keseluruhan */
+}
+.projects-card {
+  background-color: #333; /* Contoh warna latar belakang untuk kartu proyek */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  transition: transform 0.3s ease; /* Menambahkan animasi transisi */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects-card:hover {
+  transform: translateY(-5px); /* Efek hover untuk meningkatkan interaktivitas */
+}
+
+.projects-card-title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.projects-card .projects-card-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.projects-card .projects-card-img-teknologi {
+  border-radius: 50%;
+  width: 30px;
+  margin: 0.3rem;
+}
+.projects-card .projects-card-img-teknologi-container {
+  display: flex;
+  justify-content: center; /* Pusatkan gambar di dalam container */
+  flex-wrap: wrap; /* Agar gambar bisa membungkus jika terlalu banyak */
+  gap: 0.5rem; /* Jarak antar gambar */
+}
+.contact {
+  padding-top: 25rem;
+}
+.contact {
+  padding: 50px 0;
+  background-color: #000000;
+  color: #333;
+}
+.typing-title {
+  font-size: 2em;
+  overflow: hidden; /* Menghindari teks yang melampaui batas */
+  border-right: 0.15em solid orange; /* Efek kursor typing */
+  white-space: nowrap; /* Teks tidak terbungkus */
+  margin: 0 auto; /* Memusatkan elemen jika perlu */
+  letter-spacing: 0.15em; /* Spasi antar huruf */
+  animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+.typing-title span {
+  color: #6eacda; /* Warna merah untuk bagian 'My' */
+  animation: fadeIn 1.5s ease-in-out 1.2s forwards; /* Animasi fade-in */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff5252;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #666;
+  text-align: center;
+}
+
+.contact-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.map-container,
+.form-container {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.map-container .map {
+  width: 100%;
+  height: 275px;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-container form {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: #999;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #999;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 45px; /* Jarak antara tombol */
+  margin: 20px 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+/* Warna latar belakang sesuai dengan platform */
+.social-btn.instagram {
+  background-color: #e4405f;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+}
+
+.social-btn.facebook {
+  background-color: #4267b2;
+}
+
+/* Efek hover */
+.social-btn:hover {
+  transform: scale(1.1); /* Membesarkan ukuran tombol */
+  filter: brightness(1.1); /* Menambah kecerahan */
+}
+
+/* Menyembunyikan teks dan hanya menampilkan ikon */
+.social-btn i {
+  display: block;
+}
+
+/* Feather icon style */
+i[data-feather] {
+  width: 24px;
+  height: 24px;
+}
+
+/* Default styling for larger screens (desktops) */
+@media (min-width: 1024px) {
+  .navbar {
+    font-size: 1.3rem;
+    margin: 0 10px;
+  }
+  .home .content {
+    flex-direction: column;
+  }
+  .projects-card {
+    max-width: 300px;
+  }
+  .contact .map-container,
+  .contact .form-container {
+    width: 48%;
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .navbar {
+    font-size: 1.1rem;
+    margin: 0 5px;
+  }
+  .home .content {
+    flex-direction: column;
+  }
+  .projects-card {
+    max-width: 250px;
+  }
+  .contact .map-container,
+  .contact .form-container {
+    width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px;
+  }
+  .navbar .navbarlogo {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .navbar .navbarnav {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .home .content {
+    min-height: auto;
+    padding: 20px;
+  }
+  .home #gambar {
+    width: 200px;
+    height: 200px;
+  }
+  .home h2 {
+    font-size: 4rem;
+  }
+  .about h1,
+  .projects h1 {
+    font-size: 1.5rem;
+  }
+  .projects-card {
+    max-width: 100%;
+  }
+  .contact .map-container,
+  .contact .form-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .home .content {
+    padding: 10px;
+  }
+  .home #gambar {
+    width: 150px;
+    height: 150px;
+  }
+  .home h2 {
+    font-size: 3rem;
+  }
+  .projects-card {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+}
