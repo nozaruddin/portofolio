@@ -44,7 +44,20 @@ body {
 .navbar .navbarlogo span {
   color: #6eacda;
 }
+.navbar .navbarnav a:hover {
+  color: aqua;
+}
+.navbar .navbarnav a::after {
+  content: "";
+  padding-bottom: 0.4rem;
+  
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbarnav a:hover::after {
+  transform: scaleX(0.5);
 
+}
 .navbar .navbarnav {
   margin-right: 50px;
   margin-top: 23px;
@@ -87,7 +100,7 @@ body {
 .home span {
   color: rgb(255, 255, 255);
   font-weight: 100;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .home .title {
   font-family: "Cairo";
