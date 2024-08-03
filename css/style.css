@@ -113,13 +113,13 @@ body {
 }
 
 .home h2 {
-  background-image: url(https://media.giphy.com/media/kc0btUgdrXCKeQHTpP/giphy.gif?cid=790b7611xfkqdzzlako14nn45xlcjwbcnnc52vcpm3h7qppx&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  /* background-image: url(https://media.giphy.com/media/kc0btUgdrXCKeQHTpP/giphy.gif?cid=790b7611xfkqdzzlako14nn45xlcjwbcnnc52vcpm3h7qppx&ep=v1_gifs_search&rid=giphy.gif&ct=g); */
   background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
+  /* color: transparent; */
+  /* -moz-background-clip: text; */
+  /* -webkit-background-clip: text; */
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 .about {
@@ -199,7 +199,11 @@ body {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-
+.projects-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 .projects-card .projects-card-img-teknologi {
   border-radius: 50%;
   width: 30px;
@@ -474,6 +478,14 @@ i[data-feather] {
     width: 100%;
     margin-bottom: 10px;
   }
+  .datadiri {
+    padding: 0.5rem; /* Kurangi padding pada perangkat seluler */
+  }
+
+  .datadiri h3 {
+    font-size: 0.9rem; /* Sesuaikan ukuran font pada perangkat seluler */
+    margin: 0.3rem 0; /* Kurangi jarak antar elemen */
+  }
 }
 
 /* Extra small screens (phones in portrait mode) */
@@ -490,10 +502,15 @@ i[data-feather] {
     height: 150px;
   }
   .home h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: 80px;
   }
   .projects-card {
     max-width: 100%;
     padding: 0.5rem;
   }
+  .navbar {
+    padding: 5px;
+  }
+
 }
