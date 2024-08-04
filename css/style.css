@@ -26,9 +26,9 @@ body {
   right: 10px;
   z-index: 9999;
   /* From https://css.glass */
-  background: #03346e;
+  /* background: #03346e; */
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(185, 177, 177, 0.1);
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
 }
@@ -45,7 +45,7 @@ body {
   color: #6eacda;
 }
 .navbar .navbarnav a:hover {
-  color: aqua;
+  color: #6eacda;
 }
 .navbar .navbarnav a::after {
   content: "";
@@ -86,7 +86,7 @@ body {
   display: inline-block;
 
   line-height: normal;
-  color: #36a092;
+  color: #6eacda;
   padding-left: 10px;
   padding-right: 10px;
   font-weight: 500;
@@ -287,6 +287,7 @@ body {
 }
 
 .contact-content {
+  padding-top: 2rem;
   position: relative;
   display: flex;
   flex-wrap: wrap;
