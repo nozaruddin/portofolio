@@ -25,11 +25,12 @@
     <section class="home" id="home">
       <main class="content">
         <div class="title">
-          <h2>SIAP MEMBANTU DIGITALISASIKAN BISNISMU !!!!</h2>
+          <!-- gsap dibawah -->
+          <h2></h2>
          
       
          </div>
-        <img id="gambar" src="/img/a.png" />
+        <img id="gambar" src="/img/a.png" class="imgthumbnail" />
         
         <h1>Nozaruddin Andhika |<span> Web Developer</span></h1>
         
@@ -157,6 +158,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin)
+    gsap.from('.imgthumbnail', {duration: 1, y:-100, opacity:0, ease:'bounce'});
+    gsap.from('.navbar', {duration: 1, y:-100, opacity:0, ease:'bounce'});
+    gsap.to('.home h2', {duration: 3, delay:1.5, text:'SIAP MEMBANTU DIGITALISASIKAN BISNISMU !!!!' });
   </script>
     <script>
       feather.replace();
