@@ -159,21 +159,22 @@
                   </div>
                   <div class="form-container"data-aos="zoom-in-left">
                       <div class="skeleton-form"></div>
-                      <form action="send_email.php" method="post">
+                      <form name="contact-form">
                           <div class="input-group">
                               <i data-feather="user"></i>
-                              <input type="text" name="name" placeholder="Nama" required>
+                              <input type="text" name="nama" placeholder="Nama" id="name"name=nama>
                           </div>
                           <div class="input-group">
                               <i data-feather="mail"></i>
-                              <input type="email" name="email" placeholder="Email" required>
+                              <input type="email" name="email" placeholder="Email" id="email"name=email>
                           </div>
                           <div class="input-group">
                               <i data-feather="phone"></i>
-                              <input type="text" name="phone" placeholder="No HP" required>
+                              <input type="text" name="pesan" placeholder="Pesan"id="pesan" name="pesan">
                           </div>
                           <button type="submit" class="btn">Kirim Pesan</button>
                       </form>
+                      
                   </div>
               </div>
           </section>
@@ -202,6 +203,16 @@
     <script src="css/js/script.js">
 
     </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzyFqwC9OSjwCmtxXqHwvxRGaKl04vGiapzxrHtafRQFFhFdApfIcmqUnHRUpRtcBkO/exec';
+      const form = document.forms['contact-form'];
     
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
     </body>
 </html>
