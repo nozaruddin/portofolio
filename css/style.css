@@ -124,7 +124,7 @@ margin-top: 3rem;
 }
 
 .about {
-  padding-top: 23rem;
+  padding-top: 25rem;
 }
 
 .about .row {
@@ -141,6 +141,8 @@ margin-top: 3rem;
   font-weight: 100;
   max-width: 60rem;
   margin: auto;
+  padding-top: 1rem;
+
 }
 .datadiri h3 {
   color: #ffffff;
@@ -153,11 +155,11 @@ margin-top: 3rem;
   -webkit-backdrop-filter: blur(13px);
   padding: 3px 15px;
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .techstack {
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -434,6 +436,8 @@ i[data-feather] {
   height: 24px;
 }
 
+
+
 /* Default styling for larger screens (desktops) */
 @media (min-width: 1024px) {
   .navbar {
@@ -468,7 +472,10 @@ i[data-feather] {
   .contact .form-container {
     width: 100%;
   }
-
+  .footer p {
+    font-size: 90%;
+  }
+}
 
 /* Mobile screens */
 @media (max-width: 768px) {
@@ -520,6 +527,9 @@ i[data-feather] {
     font-size: 0.9rem; /* Sesuaikan ukuran font pada perangkat seluler */
     margin: 0.3rem 0; /* Kurangi jarak antar elemen */
   }
+  .footer {
+    font-size: 90%;
+  }
 }
 
 /* Extra small screens (phones in portrait mode) */
@@ -550,6 +560,9 @@ i[data-feather] {
   }
   .navbar {
     padding: 5px;
+  }
+  .footer {
+    font-size: 90%;
   }
 
 }
