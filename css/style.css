@@ -133,8 +133,13 @@ margin-top: 3rem;
   text-align: center;
 }
 .about h1 {
-  color: #6eacda;
+  /* color: #6eacda; */
+  color:#ff5252;
   font-size: 2rem;
+
+}
+.about span {
+  color: #6eacda; 
 }
 .about h2 {
   color: #ffffff;
