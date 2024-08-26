@@ -478,6 +478,127 @@ label {
   flex-wrap: wrap; /* Agar gambar bisa membungkus jika terlalu banyak */
   gap: 0.5rem; /* Jarak antar gambar */
 }
+.photooproject {
+  text-align: center;
+  width: 80%; /* Control the width of the entire section */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.photoproject h1 {
+  font-size: 36px;
+  color: #6eacda;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.photo-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(25% - 20px); /* Four cards in a row */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  height: 150px;
+}
+/* Popup container */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Popup content (image) */
+.popup-content {
+  margin: auto;
+  margin-top: 4rem;
+  display: block;
+  width: 50%;
+  max-width: 500px;
+}
+
+/* Caption of popup (image) */
+.popup-content caption {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation */
+.popup-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 105px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .videoproject {
   padding: 50px 20px;
   background-color: #000000;
@@ -555,6 +676,9 @@ label {
       width: 100%;
       height: auto;
   }
+  .card {
+    width: calc(50% - 20px); /* Two cards in a row on smaller screens */
+}
 }
 
 .contact {
@@ -875,6 +999,9 @@ footer {
     font-size: 0.9rem;
     padding: 5px;
   }
+  .card {
+    width: 100%; /* One card in a row on small screens */
+}
   .home .content {
     padding: 10px;
   }
