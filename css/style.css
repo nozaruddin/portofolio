@@ -329,6 +329,11 @@ margin-top: 3rem;
   margin-top: 7rem;
   margin-bottom: 3rem;
   text-align: center;
+  
+}
+.skills-container h1 {
+  color: #0077b5;
+  font-size: 2rem;
 }
 
 .skills-section {
